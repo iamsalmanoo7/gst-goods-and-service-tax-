@@ -28,7 +28,7 @@ $name=$_POST['name'];
 $email=$_POST['email'];
 $feedback=$_POST['feedback'];
 
-$conn=mysqli_connect("sql206.epizy.com","epiz_26367975","tclyv5Uf7gP","epiz_26367975_gst");
+$conn=mysqli_connect("localhost","root","","gst");
 $insert="INSERT INTO feedback (date,time,ip,name,email,feedback) VALUES	('$date','$time','$ip','$name','$email','$feedback')";
 
 	if(mysqli_query($conn,$insert))
