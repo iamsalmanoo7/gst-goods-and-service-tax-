@@ -33,8 +33,8 @@ $sgst=$gst/2;
 $cgst=$sgst;
 $total=$gst+$amount;
 
-$conn=mysqli_connect("sql206.byetcluster.com","epiz_26367975","tclyv5Uf7gP","epiz_26367975_gst");
-$insert="INSERT INTO cal (date,time,ip,name,email,per,amount,gst,sgst,cgst,total) VALUES 			  ('$date','$time','$ip','$name','$email','$per','$amount','$gst','$sgst','$cgst','$total')";
+$conn=mysqli_connect("localhost","root","","gst");
+$insert="INSERT INTO cal (date,time,ip,name,email,per,amount,gst,sgst,cgst,total) VALUES   ('$date','$time','$ip','$name','$email','$per','$amount','$gst','$sgst','$cgst','$total')";
 
 	if(mysqli_query($conn,$insert))
 	{
